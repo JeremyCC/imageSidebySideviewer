@@ -1,5 +1,28 @@
 # imagecompare
-A python tool for side by side image comparison
+__Python的影像視覺比對工具__  
+Distribution of the code is allowd under the License "GNU General Public License v3.0"  
+您可在遵守 "GNU General Public License v3.0"的規定下任意使用及散佈這項工具  
 
-In this tool, you can do:
-1.
+__In this tool, you can do 這項工具的功能:__
+
+1.A Synchronized view of images with same size and color channels (Now only support 3 channesl or single channel) 同步顯示多個相同大小及相同數量的色彩通道的影像 (目前僅支援3通道或單通道):
+![Image of Syn](https://github.com/JeremyCC/imagecompare/blob/master/Example/SYN.PNG)
+![Image of Syn2](https://github.com/JeremyCC/imagecompare/blob/master/Example/SYN2.PNG)
+
+
+2.Check pixel value (You can define your own text color mapping function based on the value)
+![Image of Value](https://github.com/JeremyCC/imagecompare/blob/master/Example/VALUE.PNG)
+
+
+3.Interactive image difference
+
+![Image of Diff](https://github.com/JeremyCC/imagecompare/blob/master/Example/SUB.PNG)
+![Image of Diff2](https://github.com/JeremyCC/imagecompare/blob/master/Example/SUBALL.PNG)
+
+
+__Requirement__
+> matplotlib>=2.0.2   
+> python>=3.5.3  
+
+
+__How to use__  
