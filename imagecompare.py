@@ -12,7 +12,7 @@ import copy
 import time
 import gc
 import multiprocessing
-
+__version__ ='1.0.0'
 
 class comparer(object):
 
