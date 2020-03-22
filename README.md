@@ -21,7 +21,8 @@ __In this tool, you can do 這項工具的功能:__
 
 __Requirement 需求__
 > matplotlib>=2.0.2   
-> python>=3.5.3  
+> python>=3.5.3    
+
 
 
 __How to use 如何使用__  
@@ -40,9 +41,28 @@ minmax=[[0,255],[25,125]]#the first of each item is "vmin" and the last is "vmax
 3.(Optional)Define your own color mapping function: when showing the pixel value, the color of the text will be depend on the value, you can define your own mapping function or just use the default function 
 ```python
 #Easy example
- def mycolor(pixelcolor, minv=None, maxv=None):
-    if pixelcolor>125:
+ def mycolor(pixelvalue, minv=None, maxv=None): #minv and maxv are the minimum and maximum value of the image (each image has its own value)
+    if pixelvalue>125:
      return 'black'# return any matplotlib's color code
     else:
      return 'w'
 ```
+
+4.Call the function and pass all the paremeters and data:
+```python
+ imagecompare.compare(imagelist,name=imagetitle,contrastminmax=minmax,mode=1,colormapping=mycolor,showhelp=True)#Everything can be "None" except for imagelist
+
+```
+
+5.What is "mode"?
+mode=0:Seperate windows
+![Image of mode0](https://github.com/JeremyCC/imagecompare/blob/master/Example/mode0.PNG)  
+
+mode=1:Same window  
+![Image of mode1](https://github.com/JeremyCC/imagecompare/blob/master/Example/SYN.PNG)
+
+6.Help: "Help" window show how to control the program and the zooming state of the images
+1.用左鍵拖曳影像    
+2.雙擊左鍵鎖定十字線  
+3.在兩張影像上各自點一次右鍵顯示影像差值  
+![Image of mode1](https://github.com/JeremyCC/imagecompare/blob/master/Example/HELP.PNG)
