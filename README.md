@@ -61,8 +61,8 @@ mode=0:Seperate windows
 mode=1:Same window  
 ![Image of mode1](https://github.com/JeremyCC/imagecompare/blob/master/Example/SYN.PNG)
 
-6.Help: "Help" window show how to control the program and the zooming state of the images
-1.用左鍵拖曳影像    
-2.雙擊左鍵鎖定十字線  
-3.在兩張影像上各自點一次右鍵顯示影像差值  
+6.Help: "Help" window show how to control the program and the zooming state of the images  
+    *用左鍵拖曳影像    
+    *雙擊左鍵鎖定十字線  
+    *在兩張影像上各自點一次右鍵顯示影像差值  
 ![Image of mode1](https://github.com/JeremyCC/imagecompare/blob/master/Example/HELP.PNG)
