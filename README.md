@@ -1,7 +1,10 @@
 # imagecompare
-__Python的影像視覺比對工具__  
+__A Python's image side by side comparison tool. Python的影像視覺比對工具__  
 Distribution of the code is allowd under the License "GNU General Public License v3.0"  
-您可在遵守 "GNU General Public License v3.0"的規定下任意使用及散佈這項工具  
+您可在遵守 "GNU General Public License v3.0"的規定下任意使用及散佈這項工具 
+
+Your help to make the code better is welcome :)  
+歡迎提供協助讓工具更好用:)  
 
 __In this tool, you can do 這項工具的功能:__
 
