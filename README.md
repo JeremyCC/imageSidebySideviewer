@@ -61,8 +61,11 @@ mode=0:Seperate windows
 mode=1:Same window  
 ![Image of mode1](https://github.com/JeremyCC/imagecompare/blob/master/Example/SYN.PNG)
 
-6.Help: "Help" window show how to control the program and the zooming state of the images  
+6.Help: "Help" window show how to control the program and the zooming state of the images(Note: you can also keep zooming in to enter the pixel value showing mode)   
     *用左鍵拖曳影像    
     *雙擊左鍵鎖定十字線  
     *在兩張影像上各自點一次右鍵顯示影像差值  
+    *滾動滑鼠滾輪縮放影像  
+    *按下滾輪見直接顯示像素值 (或者不斷縮放放大影像最後也會進入像素值顯示模式)  
+    *長按滾輪回到原始大小  
 ![Image of mode1](https://github.com/JeremyCC/imagecompare/blob/master/Example/HELP.PNG)
