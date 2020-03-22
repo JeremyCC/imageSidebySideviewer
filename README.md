@@ -58,7 +58,7 @@ minmax=[[0,255],[25,125]]#the first of each item is "vmin" and the last is "vmax
 ```
 
 5.What is "mode"?  
-mode=0:Show images in seperate windows
+mode=0:Show images in seperate windows  
 mode=1:Show images in a single window  
 
 
