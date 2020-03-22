@@ -57,12 +57,10 @@ minmax=[[0,255],[25,125]]#the first of each item is "vmin" and the last is "vmax
 
 ```
 
-5.What is "mode"?
-mode=0:Seperate windows
-![Image of mode0](https://github.com/JeremyCC/imagecompare/blob/master/Example/mode0.PNG)  
+5.What is "mode"?  
+mode=0:Show images in seperate windows
+mode=1:Show images in a single window  
 
-mode=1:Same window  
-![Image of mode1](https://github.com/JeremyCC/imagecompare/blob/master/Example/SYN.PNG)
 
 6.Help: "Help" window show how to control the program and the zooming state of the images(Note: you can also keep zooming in to enter the pixel value showing mode)   
     *用左鍵拖曳影像    
