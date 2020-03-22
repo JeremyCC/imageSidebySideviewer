@@ -26,6 +26,23 @@ __Requirement 需求__
 
 __How to use 如何使用__  
 1.import the tool  
-'''python
-        import imagecompare
-'''
+```python
+import imagecompare
+```  
+
+2.Prepare the image and other settings: Order the images and the name into a list. If you want to limit the contrast of the showing image, also order it into a list (Now only support single channel)(The value will be passed to plt.imshow vmin and vmax arguments)  
+```python
+imagelist=[image1,image2,image3]#you can pass as much as you want, but more images will make the programe runs slower
+imagetitle=["Fig1","Fig2","Fig3"]#Make sure the list's length is consistent with imagelist's length, or the rest will be automatically generated
+minmax=[[0,255],[25,125]]#the first of each item is "vmin" and the last is "vmax" for each image, the rest of those without setting will be displayed in matplolib's auto constrast.   
+```
+
+3.(Optional)Define your own color mapping function: when showing the pixel value, the color of the text will be depend on the value, you can define your own mapping function or just use the default function 
+```python
+#Easy example
+ def mycolor(pixelcolor, minv=None, maxv=None):
+    if pixelcolor>125:
+     return 'black'# return any matplotlib's color code
+    else:
+     return 'w'
+```
