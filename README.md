@@ -1,12 +1,12 @@
-# imagecompare
-__A Python's image side by side comparison tool. Python的影像視覺比對工具__  
+# imageSidebySideviewer
+__A Python's image side by side visual comparison tool. Python的影像視覺比對工具__  
 Distribution of the code is allowd under the License "GNU General Public License v3.0"  
 您可在遵守 "GNU General Public License v3.0"的規定下任意使用及散佈這項工具 
 
 Your help to make the code better is welcome :)  
 歡迎提供協助讓工具更好用:)  
 
-__In this tool, you can do 這項工具的功能:__
+# In this tool, you can do 這項工具的功能:
 
 1.A Synchronized view of multiple images with same size and color channels (Now only support 3 channesl or single channel) 同步顯示多個相同大小及相同數量的色彩通道的影像 (目前僅支援3通道或單通道):
 ![Image of Syn](https://github.com/JeremyCC/imagecompare/blob/master/Example/SYN.PNG)
@@ -22,16 +22,16 @@ __In this tool, you can do 這項工具的功能:__
 ![Image of Diff2](https://github.com/JeremyCC/imagecompare/blob/master/Example/SUBALL.PNG)
 
 
-__Requirement 需求__
+# Requirement 需求 
 > matplotlib>=2.0.2   
 > python>=3.5.3    
 
 
 
-__How to use 如何使用__  
+# How to use 如何使用 
 1.import the tool 載入工具 
 ```python
-import imagecompare
+import imageSidebySideviewer
 ```  
 
 2.Prepare the image and other settings: Order the images and the name into a list. If you want to limit the contrast of the showing image, also order it into a list (Now only support single channel)(The value will be passed to plt.imshow vmin and vmax arguments) 準備影像資料與設定: 把影像與各影像對應的名稱各編成一個List物件, 如果你希望在顯示影像時對比度要有限定的話(目前僅支援單通道影像)，同樣準備一個對比度範圍的List物件，其對應的就是imshow功能的vmin/vmax參數    
@@ -53,7 +53,7 @@ minmax=[[0,255],[25,125]]#the first of each item is "vmin" and the last is "vmax
 
 4.Call the function and pass all the paremeters and data 呼叫函式並送入所有需要的資料及參數:
 ```python
- imagecompare.compare(imagelist,name=imagetitle,contrastminmax=minmax,mode=1,colormapping=mycolor,showhelp=True)#Everything can be "None" except for imagelist
+ imageSidebySideviewer.compare(imagelist,name=imagetitle,contrastminmax=minmax,mode=1,colormapping=mycolor,showhelp=True)#Everything can be "None" except for imagelist
 
 ```
 
