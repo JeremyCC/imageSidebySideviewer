@@ -8,7 +8,7 @@ Distribution is allowed under License
 
 
 import matplotlib.pyplot as plt
-import imagecompare
+import imageSidebySideviewer
 
 
 if __name__=='__main__':
@@ -16,7 +16,7 @@ if __name__=='__main__':
     imagenow = plt.imread('Example\\pic1.png')
     imagenow2 = plt.imread('Example\\pic2.png')
 
-    imagecompare.compare([imagenow,imagenow2],name=['Fig1','Fig2'],contrastminmax=[[0,125]],mode=0,colormapping=None,showhelp=True)
+    imageSidebySideviewer.compare([imagenow,imagenow2],name=['Fig1','Fig2'],contrastminmax=[[0,125]],mode=0,colormapping=None,showhelp=True)
 
     '''
     mode 0: show all images separately
