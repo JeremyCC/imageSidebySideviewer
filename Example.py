@@ -12,7 +12,7 @@ import imageSidebySideviewer
 
 
 if __name__=='__main__':
-    print(imagecompare.__version__)
+    print(imageSidebySideviewer.__version__)
     imagenow = plt.imread('Example\\pic1.png')
     imagenow2 = plt.imread('Example\\pic2.png')
 

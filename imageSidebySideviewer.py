@@ -12,7 +12,7 @@ import copy
 import time
 import gc
 import multiprocessing
-__version__ ='1.0.0'
+__version__ ='1.0.1'
 
 class comparer(object):
 
@@ -892,7 +892,7 @@ class comparer(object):
             self.statetext.set_text("Present state: Resizing, please wait...")
             self.statetext.set_color('r')
             self.stateax.figure.canvas.draw()
-            plt.pause(0.001)
+
 
         if self.mode == 0:
             findfig = [ss for ss, f in enumerate(self.figall) if f == event.canvas.figure]
